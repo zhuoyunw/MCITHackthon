@@ -1,5 +1,5 @@
 # MCIT On-Campus 2021 Winter Hackathon  
-### Project/Team Name:
+### Project/Team Name: Calendar and To-Do List
 ##  
 ​
 *Remove the line below when committing your proposal*  
