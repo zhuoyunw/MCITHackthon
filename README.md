@@ -5,7 +5,6 @@
 **Team Members**  Use format below  
 Name | Year
 ------------ | -------------
-<person 1> | <their year>
 ​ Zhuoyun | First-year
 ​ Hanye Wang | First-year
 ​ Yuxin Kan | First-year
