@@ -5,7 +5,7 @@
 **Team Members**  Use format below  
 Name | Year
 ------------ | -------------
-​ Zhuoyun | First-year
+​ Zhuoyun Wang| First-year
 ​ Hanye Wang | First-year
 ​ Yuxin Kan | First-year
 **General Idea**  - A general description of what your software will do  
