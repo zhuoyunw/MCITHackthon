@@ -13,7 +13,7 @@ var items=[];
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://hanyew:Anshorsy22@cluster0.ayfxg.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
@@ -134,6 +134,12 @@ app.get("/:customListName", function (req,res){
 
 });
 
-app.listen(1200,function(){
-  console.log("Server started on port 1200");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 1200;
+}
+
+
+app.listen(port,function(){
+  console.log("Server has started successfully");
 });
