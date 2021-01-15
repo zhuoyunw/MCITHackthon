@@ -204,4 +204,14 @@ window.onload = function () {
     document.getElementById('next').onclick = function () {
         nextMonth()
     }
+
+    document.onkeydown = function (e) {
+        e = e || window.event;
+        if (e.key == 'ArrowLeft') {
+            preMonth() //left <- show Prev image
+        } else if (e.key == 'ArrowRight') {
+            // right -> show next image
+            nextMonth()
+        }
+    }
 }
