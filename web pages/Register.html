@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login-page.css">
+    <script defer src="login-page.js"></script>
+    <style>
+        a.register-field:link {color: cadetblue;text-decoration:none;}
+        a.register-field:visited {color: darkmagenta;test-decoration:none;}
+        a.register-field:hover {text-decoration:underline;}
+    </style>
+</head>
+
+<body>
+<main id="main-holder" stype="cursor: pointer; display: block;">
+    <h1 id="login-header"> Create Your Account </h1>
+
+    <div id="login-error-msg-holder">
+        <p id="login-error-msg"> Account already exists, please log in. </p>
+    </div>
+
+    <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Email Address">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="submit" value="Register" id="login-form-submit">
+        <button onclick="location.href = 'calendar.html';" type="button" id="cancel">Cancel</button>
+        <a class = "register-field" href="Log-in.html"> Already have an account? Sign in! </a>
+    </form>
+
+</main>
+</body>
+
+</html>
