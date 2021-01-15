@@ -122,13 +122,13 @@ function preMonth() {
         newMonth = newMonth.toString().padStart(2, "0");
         newYear = (newYear + parseInt(months[0].substring(0, 4))).toString();
         months.unshift(newYear + '-' + newMonth)
-        nowSelDay = 1
+        nowSelDay = 01
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex--
-        nowSelDay = 1
+        nowSelDay = 01
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
@@ -150,13 +150,13 @@ function nextMonth() {
         newMonth = newMonth.toString().padStart(2, "0");
         newYear = (newYear + parseInt(months[5].substring(0, 4))).toString();
         months.push(newYear + '-' + newMonth)
-        nowSelDay = 1
+        nowSelDay = 01
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex++
-        nowSelDay = 1
+        nowSelDay = 01
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
@@ -165,7 +165,7 @@ function nextMonth() {
 
 function nowSelDate() {
     var str = ''
-    str = 'Date: ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay
+    str = 'Date: ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
     return str
 }
 selDayHtml.innerHTML = nowSelDate()
