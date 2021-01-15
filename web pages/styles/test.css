@@ -1,0 +1,134 @@
+@charset 'utf-8';
+html {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    position: absolute; width:100%; height: 100%;
+}
+
+body {
+    background-color:#fcee6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.calendar {
+    box-sizing:border-box; 
+    width:320px; 
+    background:#29323f; 
+    border-radius:5px; 
+    overflow:hidden; 
+    display:block; 
+    margin-bottom:10px; 
+    box-shadow:0 0 10px #201d1c; 
+    margin: 0 auto; 
+    margin-top:100px;
+}
+
+.selNowDays {
+    font:20px 'Dosis', sans-serif; 
+    font-weight:700; 
+    color:#fcee6d; 
+    display:block; 
+    margin:18px 0 0 0; 
+    text-transform:uppercase; 
+    text-align:center; 
+    box-shadow: 5px 10px 20px rgba(0,0,0,.2);
+    letter-spacing:1px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.months {
+    color: #f7f3eb;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 36px;
+}
+
+.months strong {
+  width: 8%;
+  text-align: center;
+}
+
+.months-outer {
+  overflow: hidden;
+  width: 84%;
+  height: 36px;
+}
+
+.months-con-outer {
+  width: 100%;
+  height: 52px;
+  overflow-x: auto;
+}
+
+.months-con {
+  display: inline-block;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.months-con span {
+  display: inline-block;
+  width: 17%;
+  height: 36px;
+  padding: 0 5px;
+  line-height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.months-con .sel-month {
+    color: #f7f3eb;
+    background: #269aff;
+}
+
+
+.weeks {
+    color: #f7f3eb;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.weeks span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 34px;
+  color: #f7f3eb;
+  font-size: 14px;
+}
+
+.days {
+    color: #f7f3eb;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.days span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.5px;
+  height: 45.5px;
+  cursor: pointer;
+}
+
+.days span:hover, .days span:focus {
+    background-color:#269aff;
+    cursor: pointer;
+}
+
+}

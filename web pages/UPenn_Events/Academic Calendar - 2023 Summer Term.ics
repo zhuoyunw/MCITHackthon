@@ -1,0 +1,127 @@
+BEGIN:VCALENDAR
+NAME:Academic Calendar - 2023 Summer Term
+X-WR-CALNAME:Academic Calendar - 2023 Summer Term
+VERSION:2.0
+PRODID:-//Stanza //Stanza Calendar v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:11-Week Session classes begin
+END:VALARM
+DTSTART;VALUE=DATE:20230522
+DTEND;VALUE=DATE:20230522
+UID:sKh0QApGeY_DqJNxXNffZkNR@stanza.co
+SUMMARY:11-Week Session classes begin
+DESCRIPTION:11-Week Session classes begin\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Session I classes begin
+END:VALARM
+DTSTART;VALUE=DATE:20230522
+DTEND;VALUE=DATE:20230522
+UID:z5mznzLVu5tI2dmDfSH3Ppz3@stanza.co
+SUMMARY:Session I classes begin
+DESCRIPTION:Session I classes begin\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Memorial Day observed (no classes)
+END:VALARM
+DTSTART;VALUE=DATE:20230529
+DTEND;VALUE=DATE:20230529
+UID:OC6YjHiNrYkHP6-Le1ydZB6H@stanza.co
+SUMMARY:Memorial Day observed (no classes)
+DESCRIPTION:Memorial Day observed (no classes)\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Session I classes end
+END:VALARM
+DTSTART;VALUE=DATE:20230628
+DTEND;VALUE=DATE:20230628
+UID:7XDSfJvNm9SlN2XBK4h5m89o@stanza.co
+SUMMARY:Session I classes end
+DESCRIPTION:Session I classes end\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Session II classes begin
+END:VALARM
+DTSTART;VALUE=DATE:20230629
+DTEND;VALUE=DATE:20230629
+UID:QE6TSAa9QBRYDu724qLylw07@stanza.co
+SUMMARY:Session II classes begin
+DESCRIPTION:Session II classes begin\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Independence Day observed (no classes)
+END:VALARM
+DTSTART;VALUE=DATE:20230704
+DTEND;VALUE=DATE:20230704
+UID:JxreaP3OaKq3m6U6F1YuVZpS@stanza.co
+SUMMARY:Independence Day observed (no classes)
+DESCRIPTION:Independence Day observed (no classes)\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Session II & 11-Week Session classes end
+END:VALARM
+DTSTART;VALUE=DATE:20230804
+DTEND;VALUE=DATE:20230804
+UID:E73UHHwB0PvutUtXAmjzV7Jq@stanza.co
+SUMMARY:Session II & 11-Week Session classes end
+DESCRIPTION:Session II & 11-Week Session classes end\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155930Z
+CREATED:20210115T155930Z
+LAST-MODIFIED:20210115T155930Z
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
