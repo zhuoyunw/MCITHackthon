@@ -1,32 +1,71 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container mt-5">
-  <h1>Login</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login-page.css">
+  <script defer src="login-page.js"></script>
+  <style>
+    a.register-field:link {color: cadetblue;text-decoration:none;}
+    a.register-field:visited {color: darkmagenta;test-decoration:none;}
+    a.register-field:hover {text-decoration:underline;}
+  </style>
+</head>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
+<body>
+<main id="main-holder" stype="cursor: pointer; display: block;">
+  <h1 id="login-header"> To-do List Login </h1>
 
-          <!-- Makes POST request to /login route -->
-          <form action="/login" method="POST">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="btn btn-dark" style="width: 150px">Login</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-
+  <div id="login-error-msg-holder">
+    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
   </div>
-</div>
 
-<%- include('partials/footer') %>
+  <form id="login-form" action="/login" method="post">
+    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+    <input type="submit" value="Login" id="login-form-submit">
+    <button onclick="goBack()" type="button" id="cancel">Cancel</button>
+    <a class = "register-field" href="/register"> Don't have an account yet? Register! </a>
+  </form>
+
+</main>
+</body>
+
+</html>
+
+
+
+
+
+<!--<div class="container mt-5">-->
+<!--  <h1>Login</h1>-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-8">-->
+<!--      <div class="card">-->
+<!--        <div class="card-body">-->
+
+<!--          &lt;!&ndash; Makes POST request to /login route &ndash;&gt;-->
+<!--          <form action="/login" method="POST">-->
+<!--            <div class="form-group">-->
+<!--              <label for="email">Email</label>-->
+<!--              <input type="email" class="form-control" name="username">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <label for="password">Password</label>-->
+<!--              <input type="password" class="form-control" name="password">-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn btn-dark" style="width: 150px">Login</button>-->
+<!--          </form>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+<!--  </div>-->
+<!--</div>-->
+
+

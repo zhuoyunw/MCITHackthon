@@ -1,42 +1,84 @@
-<%- include('partials/header') %>
-<div class="container mt-5">
-  <h1>Register</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login-page.css">
+  <script defer src="login-page.js"></script>
+  <style>
+    a.register-field:link {color: cadetblue;text-decoration:none;}
+    a.register-field:visited {color: darkmagenta;test-decoration:none;}
+    a.register-field:hover {text-decoration:underline;}
+  </style>
+</head>
 
-          <!-- Makes POST request to /register route -->
-          <form action="/register" method="POST">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="btn btn-dark" style="width: 150px">Register</button>
-          </form>
+<body>
+<main id="main-holder" stype="cursor: pointer; display: block;">
+  <h1 id="login-header"> Create Your Account </h1>
 
-        </div>
-      </div>
-    </div>
+  <div id="login-error-msg-holder">
+    <p id="login-error-msg"> Account already exists, please log in. </p>
+  </div>
 
-<!--    <div class="col-sm-4">-->
+  <form id="login-form" action="/register" method="POST">
+    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Email Address">
+    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+    <input type="submit" value="Register" id="login-form-submit">
+    <button onclick="goBack()" type="button" id="cancel">Cancel</button>
+    <a class = "register-field" href="/login"> Already have an account? Sign in! </a>
+  </form>
+
+</main>
+</body>
+
+</html>
+
+
+
+
+
+
+<!--<%- include('partials/header') %>-->
+<!--<div class="container mt-5">-->
+<!--  <h1>Register</h1>-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-8">-->
 <!--      <div class="card">-->
 <!--        <div class="card-body">-->
-<!--          <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">-->
-<!--            <i class="fab fa-google"></i>-->
-<!--            Sign Up with Google-->
-<!--          </a>-->
+
+<!--          &lt;!&ndash; Makes POST request to /register route &ndash;&gt;-->
+<!--          <form action="/register" method="POST">-->
+<!--            <div class="form-group">-->
+<!--              <label for="email">Email</label>-->
+<!--              <input type="email" class="form-control" name="username">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <label for="password">Password</label>-->
+<!--              <input type="password" class="form-control" name="password">-->
+<!--            </div>-->
+<!--            <button type="submit" class="btn btn-dark" style="width: 150px">Register</button>-->
+<!--          </form>-->
+
 <!--        </div>-->
-<!--    -->
 <!--      </div>-->
 <!--    </div>-->
 
-  </div>
-</div>
+<!--&lt;!&ndash;    <div class="col-sm-4">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="card">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">&ndash;&gt;-->
+<!--&lt;!&ndash;            <i class="fab fa-google"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;            Sign Up with Google&ndash;&gt;-->
+<!--&lt;!&ndash;          </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    &ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
 
-<%- include('partials/header') %>
+<!--  </div>-->
+<!--</div>-->
+
+<!--<%- include('partials/header') %>-->

@@ -71,6 +71,14 @@ app.get("/register", function(req, res){
   res.render("register");
 });
 
+app.get("/essentials", function(req, res){
+  res.render("essentials");
+});
+
+app.get("/calendar", function(req, res){
+  res.render("calendar");
+});
+
 const itemsSchema = {
   todoData: String
 };
@@ -247,7 +255,6 @@ app.get("/logout", function(req, res){
 });
 
 app.post("/login", function(req, res){
-
 
   const user = new User({
     username: req.body.username,

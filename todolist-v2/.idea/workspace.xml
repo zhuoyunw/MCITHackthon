@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc5ceb54-e9a7-4187-9858-e1cd5b232075" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/login-page.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/bootstrap-social.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/essentials.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/login-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/test.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/requireLogged.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/calendar.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/essentials.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/register.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
@@ -14,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/list.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web pages/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web pages/web.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +52,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/partials" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/partials" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views" />
@@ -76,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610567817238</updated>
       <workItem from="1610567818492" duration="12387000" />
-      <workItem from="1610596937652" duration="24810000" />
+      <workItem from="1610596937652" duration="29583000" />
     </task>
     <servers />
   </component>
@@ -99,7 +117,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>176</line>
+          <line>184</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
