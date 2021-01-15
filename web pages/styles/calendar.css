@@ -177,8 +177,8 @@ body {
 }
 
 .months-con .sel-month {
-    color: #f7f3eb;
-    background: #269aff;
+  color: #f7f3eb;
+  background: #269aff;
 }
 
 
@@ -223,5 +223,8 @@ body {
     background-color:#269aff;
     cursor: pointer;
 }
-
+.days .sel-days {
+  color: #f7f3eb;
+  background: #269aff;
 }
+

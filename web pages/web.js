@@ -1,6 +1,5 @@
 var weeks = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var months = ['2021-01', '2021-02', '2021-03', '2021-04', '2021-05', '2021-06', '2021-07']
-var monthList = months;
 var calendar = document.getElementById('calendar');
 var monthsHtml = document.querySelector('#calendar .months-con');
 var weeksHtml = document.querySelector('#calendar .weeks');
@@ -12,21 +11,24 @@ var nowSelYear = null;
 var nowSelMonth = null;
 var nowSelDay = null;
 var nowMonthIndex = 0;
+var shift = 0;
 
 function getMonths(ind) {
     var str = ''
     var css = ''
     var monthArr = uniq(months)
-    var monthName = ['Jan', 'Feb', 'Mon', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    var monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     for (let i = 0; i < monthArr.length; i++) {
         if (i === parseInt(ind)) {
-            css = 'sel-month'
+            css = ' class = "sel-month"'
             nowSelYear = monthArr[i].substring(0, 4)
             nowSelMonth = monthArr[i].substring(5, 7)
         } else {
             css = ''
         }
-        str += '<span data-index=' + i + ' class="' + css + '">' + monthName[i] + '</span>'
+        var temp = (i + shift) % 12;
+        if (temp < 0) temp = temp + 12;
+        str += '<span data-index=' + i + css + '>' + monthName[temp] + '</span>'
     }
 
     return str
@@ -73,7 +75,7 @@ function getDays(year, month) {
 
     nowSelDay = nowSelDay ? nowSelDay : 1
 
-    for (let i = 1; i <= daysFirst; i++) {
+    for (let i = 1; i <= daysFirst % 7; i++) {
         str2 += '<span></span>'
     }
     for (let i = 1; i <= days; i++) {
@@ -108,7 +110,22 @@ function getThisMonthDays(year, month) {
 
 function preMonth() {
     if (nowMonthIndex == 0) {
-        return
+        shift = shift - 1;
+        months = months.slice(0, -1);
+        var newMonth;
+        var newYear = 0;
+        newMonth = parseInt((months[0]).substring(5, 7)) - 1;
+        if (newMonth < 1) {
+            newMonth = newMonth + 12;
+            newYear = -1;
+        }
+        newMonth = newMonth.toString().padStart(2, "0");
+        newYear = (newYear + parseInt(months[0].substring(0, 4))).toString();
+        months.unshift(newYear + '-' + newMonth)
+        nowSelDay = 1
+        monthsHtml.innerHTML = getMonths(nowMonthIndex)
+        daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
+        selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex--
         nowSelDay = 1
@@ -121,7 +138,22 @@ function preMonth() {
 
 function nextMonth() {
     if (nowMonthIndex == uniq(months).length - 1) {
-        return
+        shift = shift + 1;
+        months = months.slice(1);
+        var newMonth;
+        var newYear = 0;
+        newMonth = parseInt((months[5]).substring(5, 7)) + 1;
+        if (newMonth > 12) {
+            newMonth = newMonth - 12;
+            newYear = 1;
+        }
+        newMonth = newMonth.toString().padStart(2, "0");
+        newYear = (newYear + parseInt(months[5].substring(0, 4))).toString();
+        months.push(newYear + '-' + newMonth)
+        nowSelDay = 1
+        monthsHtml.innerHTML = getMonths(nowMonthIndex)
+        daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
+        selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex++
         nowSelDay = 1
