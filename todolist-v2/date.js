@@ -18,3 +18,12 @@ exports.getDay = function (){
     return day = today.toLocaleDateString("en-US",options);
 
 }
+
+exports.getTime = function (){
+    const today = new Date();
+    const options = {
+        hour: "numeric",
+        minute: "numeric"
+    }
+    return day = today.toLocaleDateString("en-US", options);
+}
