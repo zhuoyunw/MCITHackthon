@@ -1,12 +1,12 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-color: #fcee6d;
+  background-image: -webkit-linear-gradient(65deg, #fcee6d 50%, #E4E9FD 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
 
 h1 {
-  color: #fff;
+  color: #00204a;
   padding: 10px;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #fcee6d;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #00204a;
 }
 
 .item:last-child {
@@ -107,6 +107,6 @@ body {
 .secret-text {
   text-align: center;
   font-size: 2rem;
-  color: #fff;
+  color: #00204a;
   background-color: #000;
 }

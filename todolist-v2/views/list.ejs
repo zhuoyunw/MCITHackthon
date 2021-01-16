@@ -14,54 +14,52 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/list-style.css">
 
 
   </head>
   <body>
   <%- include('partials/nav') %>
+    <header>
+      <div>
+      <h3>Welcome! <%= nameOfUsr %></h3>
+      </div>
+      <div>
+        <span id="Philadelphia_z161" style="font-size:80px; margin: 0px auto"></span>
+        <script src="//widget.time.is/t.js"></script>
+        <script>
+          time_is_widget.init({Philadelphia_z161:{time_format:"12hours:minutesAMPM"}});
+        </script>
+      </div>
+    </header>
+  <!--  todolist-->
+  <div class="box">
+    <div id="heading"><span> <%=listTitle%> </span></div>
+    <!--<h1> <%=listTitle%></h1>-->
 
-  <h3>Welcome! <%= nameOfUsr %></h3>
-
-<div>
-  <span id="Philadelphia_z161" style="font-size:80px; margin: 0px auto"></span>
-  <script src="//widget.time.is/t.js"></script>
-  <script>
-    time_is_widget.init({Philadelphia_z161:{time_format:"12hours:minutesAMPM"}});
-  </script>
-</div>
-
-
-
-
-
-
-<!--  todolist-->
-  <div class="box" id="heading">
-    <h1> <%=listTitle%></h1>
-  </div>
-<div class="box">
+    <!--<div class="">-->
     <% newListItems.forEach(function (item){ %>
-  <form action="/delete" method="post">
-    <div class="item">
-      <input type="checkbox" name="checkbox" value = "<%=item.id%>" onchange="this.form.submit()">
-      <p><%=item.todoData%></p>
-    </div>
-    <input type="hidden" name="listName" value="<%= listTitle %>">
-    <input type="hidden" name="nameOfUsr" value="<%= nameOfUsr %>">
-  </form>
+    <form action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value = "<%=item.id%>" onchange="this.form.submit()">
+        <p class="list" style="display:inline"> <%=item.todoData%> </p>
+      </div>
+      <input type="hidden" name="listName" value="<%= listTitle %>">
+      <input type="hidden" name="nameOfUsr" value="<%= nameOfUsr %>">
+    </form>
 
-  <%}) %>
+    <%}) %>
 
-  <form class="" action="/today" method="post">
-    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-    <button type="submit" name="list" value="<%= listTitle %>">+</button>
-  </form>
-</div>
+    <form class="" action="/today" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+      <button class="add" type="submit" name="list" value="<%= listTitle %>">+</button>
+    </form>
+  </div>
 
-<div>
-  <a href="/logout"><button type="submit" name="logOut">Log out</button></a>
-</div>
+  <!--
+  <div>
+    <a href="/logout"><button type="submit" name="logOut">Log out</button></a>
+  </div>-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
           crossorigin="anonymous"></script>
@@ -74,3 +72,6 @@
   <script src="../web.js"></script>
   </body>
 </html>
+
+
+

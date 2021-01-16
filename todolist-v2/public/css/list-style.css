@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+html {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    position: absolute; width:100%; height: 100%;
+}
+
+
+
+body {
+    background-color:#fcee6d;
+    /*display: relative;*/
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);
+    margin-top: 40px;
+    padding: 60px 40px;
+    color: white;
+    text-align: center;
+    /*position: fixed;*/
+
+}
+
+h3 {
+    /*display: block;*/
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    /*
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+
+
+    font-weight: bold;*/
+}
+
+#Philadelphia_z161 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.box {
+    margin-top: 50px;
+    margin-left: 45%;
+    width: 100%;
+    display: block;
+}
+
+#heading {
+    font-family: 'Dosis', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.item {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+input:placeholder-shown {
+    /*border: 2px solid #ff9999;*/
+    margin-top: 20px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+input::placeholder {
+    font-family: 'Dosis', sans-serif;
+}
+
+button.add {
+    border-radius: 20px;
+    background-color: #ff9999;
+}
+
+button.add:hover {
+    cursor: pointer;
+    background-color: #3399ff;
+}
+
