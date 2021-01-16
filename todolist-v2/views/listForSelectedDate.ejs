@@ -16,55 +16,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/calendar.css">
 
+
   </head>
   <body>
   <%- include('partials/nav') %>
 
-  <%- include('partials/nav') %>
-  <div class="calendar">
-    <a href="/Jan1"><button class="selectedDate">1</button></a>
-    <a href="/Jan2"><button class="selectedDate">2</button></a>
-    <a href="/Jan3"><button class="selectedDate">3</button></a>
-    <a href="/Jan4"><button class="selectedDate">4</button></a>
-    <a href="/Jan5"><button class="selectedDate">5</button></a>
-    <a href="/Jan6"><button class="selectedDate">6</button></a>
-    <a href="/Jan7"><button class="selectedDate">7</button></a>
-
-
-
-
-
+  <div id="calendar" class="calendar">
+    <div class="selNowDays"></div>
+    <div class="months">
+      <strong id="pre" class="pre">«</strong>
+      <div class="months-outer">
+        <div class="months-con-outer">
+          <div class="months-con"></div>
+        </div>
+      </div>
+      <strong id="next" class="next">»</strong>
+    </div>
+    <div class="weeks"></div>
+    <div class="days">
+    </div>
   </div>
-  <!--    <div id="calendar" class="calendar">-->
-  <!--        <div class="selNowDays"></div>-->
-  <!--        <div class="months">-->
-  <!--            <strong id="pre" class="pre">«</strong>-->
-  <!--            <div class="months-outer">-->
-  <!--                <div class="months-con-outer">-->
-  <!--                    <div class="months-con"></div>-->
-  <!--                </div>-->
-  <!--            </div>-->
-  <!--            <strong id="next" class="next">»</strong>-->
-  <!--        </div>-->
-  <!--        <div class="weeks"></div>-->
-  <!--        <div class="days">-->
-  <!--        </div>-->
-  <!--    </div>-->
-
-  <!--    <p id="demo"></p>-->
 
 
-  <!--    &lt;!&ndash; <script src="calendar.js"></script> &ndash;&gt;-->
-  <!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
-  <!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
-  <!--        crossorigin="anonymous"></script>-->
-  <!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"-->
-  <!--        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"-->
-  <!--        crossorigin="anonymous"></script>-->
-  <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"-->
-  <!--        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"-->
-  <!--        crossorigin="anonymous"></script>-->
-  <!--    <script src="../web.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+  <script src="js/web.js"></script>
 
   <h3>Welcome! <%= nameOfUsr %></h3>
 

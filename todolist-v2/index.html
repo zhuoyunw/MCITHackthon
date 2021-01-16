@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #map {
+        height: 100%;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+<div id="map"></div>
+<script>
+
+    function initMap(){
+        var options={
+            center: {lat: 39.95,lng:-75.19},
+            zoom: 8
+        }
+        var map = new
+        google.maps.Map(document.getElementById('map'), options);
+    }
+</script>
+<script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeT-hh61Vy5K5Rii7ZWb07x_kn1iLD9gM&callback=initMap">
+</script>
+</body>
+</html>
