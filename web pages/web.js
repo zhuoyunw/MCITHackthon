@@ -126,8 +126,8 @@ function getDays(year, month) {
 
                     var element2 = document.getElementById("days_number" + j.toString().padStart(2, "0"));
                     var existed = element2.getAttribute('data-title');
-                    if (existed == null) element2.setAttribute('data-title', array[i].slice(18, -1));
-                    else element2.setAttribute('data-title', existed + '\n' + array[i].slice(18, -1));
+                    if (existed == null) element2.setAttribute('data-title', array[i].slice(18));
+                    else element2.setAttribute('data-title', existed + '\n' + array[i].slice(18));
                     if ((j + daysFirst) % 7 == 1) {
                         element2.setAttribute('pos', '-20px');
                     }

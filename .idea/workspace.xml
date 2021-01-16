@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65281f57-4e49-4e7e-bd33-9c84e60658d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist-v2/public/css/list-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/public/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/public/css/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/views/list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/views/list.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/views/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist-v2/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-v2/public/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/public/css/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-v2/views/calendar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/views/calendar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist-v2/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/todolist-v2/web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web pages/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/web pages/web.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1n8MkMK6PgKBRAq3yqy32gUnUwh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,13 +37,17 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="login.ejs" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MCITHackthon/todolist-v2/views/login.ejs" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/todolist-v2/app.js" working-dir="$PROJECT_DIR$/todolist-v2">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="JavaScript Debug.login.ejs" />
       </list>
     </recent_temporary>
   </component>
@@ -74,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
