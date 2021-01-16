@@ -233,6 +233,48 @@ app.post("/delete", function (req, res) {
 
 });
 
+
+app.post("/register", function(req, res){
+
+  User.register({username: req.body.username}, req.body.password, function(err, user){
+    if (err) {
+      console.log(err);
+      res.redirect("/register");
+    } else {
+      passport.authenticate("local")(req, res, function(){
+        username = req.body.username;
+        res.redirect("/today");
+      });
+    }
+  });
+
+});
+
+app.get("/logout", function(req, res){
+  req.logout();
+  res.redirect("/");
+});
+
+app.post("/login", function(req, res){
+
+  const user = new User({
+    username: req.body.username,
+    password: req.body.password
+  });
+
+  req.login(user, function(err){
+    if (err) {
+      console.log(err);
+    } else {
+      passport.authenticate("local",  { failureRedirect: '/login' })(req, res, function(){
+        username = req.body.username;
+        res.redirect("/today");
+      });
+    }
+  });
+
+});
+
 app.get("/:selectedDate", function (req,res){
   if (!req.isAuthenticated()){
     res.redirect("/");
@@ -267,46 +309,6 @@ app.get("/:selectedDate", function (req,res){
 });
 
 
-app.post("/register", function(req, res){
-
-  User.register({username: req.body.username}, req.body.password, function(err, user){
-    if (err) {
-      console.log(err);
-      res.redirect("/register");
-    } else {
-      passport.authenticate("local")(req, res, function(){
-        username = req.body.username;
-        res.redirect("/today");
-      });
-    }
-  });
-
-});
-
-app.get("/logout", function(req, res){
-  req.logout();
-  res.redirect("/login");
-});
-
-app.post("/login", function(req, res){
-
-  const user = new User({
-    username: req.body.username,
-    password: req.body.password
-  });
-
-  req.login(user, function(err){
-    if (err) {
-      console.log(err);
-    } else {
-      passport.authenticate("local",  { failureRedirect: '/login' })(req, res, function(){
-        username = req.body.username;
-        res.redirect("/today");
-      });
-    }
-  });
-
-});
 
 let port = process.env.PORT;
 if (port == null || port == "") {
