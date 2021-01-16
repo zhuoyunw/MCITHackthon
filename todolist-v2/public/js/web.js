@@ -198,6 +198,7 @@ function preMonth() {
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
     }
+
 }
 
 
@@ -231,7 +232,8 @@ function nextMonth() {
 function nowSelDate() {
     var str = ''
     str = 'Date: ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
-    return str
+    return str + '<p class="redirect-todo"><a class="btn btn-outline-warning btn-sm" href="/' + nowSelYear + nowSelMonth + nowSelDay.toString().padStart(2, "0")
+        + '"role="button">  Todo  </a></p>'
 }
 selDayHtml.innerHTML = nowSelDate()
 
