@@ -127,7 +127,7 @@ app.get("/today",function(req,res){
         const data = new Data({
           username: username,
           date: today,
-          items: [defaultItem]
+          items: defaultItem
         });
         //save the list into db
         data.save();
@@ -218,22 +218,18 @@ app.post("/delete", function (req, res) {
               res.redirect("/today");
             }
           });
-    }
+    }else{
+    Data.findOneAndUpdate(
+        {username: nameOfUsr, date: selectedDate},
+        {$pull: {items: {_id: checkedItemId}}},
+        function (err, foundList) {
+          if (!err) {
+            console.log(foundList);
+            res.redirect("/" + selectedDate);
+          }
+        });
+  }
 
-    let isDeleted = confirm("Are you sure to delete it?");
-    if (!isDeleted) {
-      res.redirect("/today");
-    } else {
-      Data.findOneAndUpdate(
-          {username: nameOfUsr, date: selectedDate},
-          {$pull: {items: {_id: checkedItemId}}},
-          function (err, foundList) {
-            if (!err) {
-              console.log(foundList);
-              res.redirect("/" + selectedDate);
-            }
-          });
-    }
 
 });
 
@@ -251,7 +247,7 @@ app.get("/:selectedDate", function (req,res){
           const data = new Data({
             username: username,
             date: selectedDate,
-            items: [defaultItem]
+            items: defaultItem
           });
           console.log("hello");
           //save the list into db
