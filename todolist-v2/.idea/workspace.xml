@@ -12,6 +12,7 @@
       <change afterPath="$PROJECT_DIR$/views/calendar.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/essentials.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/listForSelectedDate.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
@@ -52,15 +53,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/partials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/partials" />
       <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/views/partials" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -94,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610567817238</updated>
       <workItem from="1610567818492" duration="12387000" />
-      <workItem from="1610596937652" duration="29729000" />
+      <workItem from="1610596937652" duration="35447000" />
     </task>
     <servers />
   </component>
@@ -117,7 +118,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>184</line>
+          <line>204</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>

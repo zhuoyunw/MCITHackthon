@@ -79,6 +79,7 @@ app.get("/calendar", function(req, res){
   res.render("calendar");
 });
 
+
 const itemsSchema = {
   todoData: String
 };
@@ -87,7 +88,13 @@ const Item = mongoose.model("Item", itemsSchema);
 const item1 = new Item({
   todoData: "Write down your todo list!"
 })
+
 const defaultItem = [item1];
+
+
+
+
+
 //add one new username to the data Schema
 //1. username
 //2. date
@@ -109,7 +116,6 @@ app.get("/today",function(req,res){
   }else{
     Data.findOne({username: username, date: today}, function (err, foundList){
       if(!foundList){
-
         const data = new Data({
           username: username,
           date: today,
@@ -143,17 +149,14 @@ app.get("/today",function(req,res){
 
 app.post("/today",function(req,res){
   const itemName = req.body.newItem;
-  // const listName = req.body.list;
+  const selectedDate = req.body.list;
 
   //add items to db
   const item = new Item({
     todoData: itemName
   });
 
-  // if (listName === "Today"){
-  //   item.save();
-  //   res.redirect("/today");
-  // }else{
+  if (selectedDate === "Today"){
     Data.findOne({username: username, date: today}, function (err, foundList){
       if (!foundList) {
         //create a new list
@@ -171,67 +174,82 @@ app.post("/today",function(req,res){
       //   res.redirect("/"+customListName);
       res.redirect("/today");
     })
-  // }
+  }else{
+    Data.findOne({username: username, date: selectedDate}, function (err, foundList){
+      if (!foundList) {
+        //create a new list
+        const data = new Data({
+          username: username,
+          date: selectedDate,
+          items: [item]
+        });
+        //save the list into db
+        data.save();
+      }else{
+        foundList.items.push(item);
+        foundList.save();
+      }
+        res.redirect("/"+selectedDate);
+    })
+  }
 
 });
 
 app.post("/delete", function (req, res) {
   const checkedItemId = req.body.checkbox;
-  const listName = req.body.listName;
+  const selectedDate = req.body.listName;
   const nameOfUsr = req.body.nameOfUsr;
 
-  if(listName === "Today"){
+  if(selectedDate === "Today"){
     Data.findOneAndUpdate(
         {username: nameOfUsr,date: today},
         {$pull: {items:{_id: checkedItemId}}},
         function (err, foundList){
           if (!err){
 
-            res.redirect("/"+listName);
+            res.redirect("/today");
+          }
+        });
+  }else{
+    Data.findOneAndUpdate(
+        {username: nameOfUsr,date: selectedDate},
+        {$pull: {items:{_id: checkedItemId}}},
+        function (err, foundList){
+          if (!err){
+            console.log(foundList);
+            res.redirect("/"+selectedDate);
           }
         });
   }
 
-  // if (listName === "Today"){
-  //
-  //   Data.findOne({username: nameOfUsr, date: listName}, function (err, foundList){
-  //   }
-  // })
-  // }
-  //   Item.findByIdAndRemove(checkedItemId, function (err) {
-  //     if(!err){
-  //       console.log("Successfully deleted!")
-  //       res.redirect("/today");
-  //     }
-    // });
-  // }else{
-  //
-  // }
+});
+
+app.get("/:selectedDate", function (req,res){
+  const selectedDate = _.capitalize(req.params.selectedDate);
+
+  //selectedDate is the date selected
+  Data.findOne({username: username, date:selectedDate}, function (err, foundList){
+    if (!err){
+      if (!foundList){
+        //create a new list
+        const data = new Data({
+          username: username,
+          date: selectedDate,
+          items: [defaultItem]
+        });
+        console.log("hello");
+        //save the list into db
+        data.save();
+        res.redirect("/"+selectedDate);
+      }else{
+        //show an existing list
+        res.render("listForSelectedDate",{listTitle:foundList.date,newListItems:foundList.items, nameOfUsr: username});
+      }
+    }
+  });
 
 });
-//
-// app.get("/:customListName", function (req,res){
-//   const customListName = _.capitalize(req.params.customListName);
-//
-//   List.findOne({name:customListName}, function (err, foundList){
-//     if (!err){
-//       if (!foundList){
-//         //create a new list
-//         const list = new List({
-//           name: customListName,
-//           items: defaultItems
-//         });
-//         //save the list into db
-//         list.save();
-//         res.redirect("/"+customListName);
-//       }else{
-//         //show an existing list
-//         res.render("list",{listTitle:foundList.name,newListItems:foundList.items});
-//       }
-//     }
-//   });
-//
-// });
+
 
 app.post("/register", function(req, res){
 
