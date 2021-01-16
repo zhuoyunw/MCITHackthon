@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf927d5-fd6b-4771-b445-99a5ef49732b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../todolist-v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist-v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist-v2/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist-v2/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist-v2/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist-v2/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist-v2/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist-v2/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todolist-v2/views/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist-v2/views/register.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
