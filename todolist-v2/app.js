@@ -209,26 +209,31 @@ app.post("/delete", function (req, res) {
   const nameOfUsr = req.body.nameOfUsr;
 
   if(selectedDate === "Today"){
-    Data.findOneAndUpdate(
-        {username: nameOfUsr,date: today},
-        {$pull: {items:{_id: checkedItemId}}},
-        function (err, foundList){
-          if (!err){
 
-            res.redirect("/today");
-          }
-        });
-  }else{
-    Data.findOneAndUpdate(
-        {username: nameOfUsr,date: selectedDate},
-        {$pull: {items:{_id: checkedItemId}}},
-        function (err, foundList){
-          if (!err){
-            console.log(foundList);
-            res.redirect("/"+selectedDate);
-          }
-        });
-  }
+      Data.findOneAndUpdate(
+          {username: nameOfUsr,date: today},
+          {$pull: {items:{_id: checkedItemId}}},
+          function (err, foundList){
+            if (!err){
+              res.redirect("/today");
+            }
+          });
+    }
+
+    let isDeleted = confirm("Are you sure to delete it?");
+    if (!isDeleted) {
+      res.redirect("/today");
+    } else {
+      Data.findOneAndUpdate(
+          {username: nameOfUsr, date: selectedDate},
+          {$pull: {items: {_id: checkedItemId}}},
+          function (err, foundList) {
+            if (!err) {
+              console.log(foundList);
+              res.redirect("/" + selectedDate);
+            }
+          });
+    }
 
 });
 
@@ -298,7 +303,7 @@ app.post("/login", function(req, res){
     if (err) {
       console.log(err);
     } else {
-      passport.authenticate("local")(req, res, function(){
+      passport.authenticate("local",  { failureRedirect: '/login' })(req, res, function(){
         username = req.body.username;
         res.redirect("/today");
       });
