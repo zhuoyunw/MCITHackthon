@@ -1,0 +1,280 @@
+BEGIN:VCALENDAR
+NAME:Academic Calendar - 2022 Fall Term
+X-WR-CALNAME:Academic Calendar - 2022 Fall Term
+VERSION:2.0
+PRODID:-//Stanza //Stanza Calendar v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Move-in for First Year Students
+END:VALARM
+DTSTART;VALUE=DATE:20220824
+DTEND;VALUE=DATE:20220824
+UID:9G1_c4dRU1HTNDXDReberU95@stanza.co
+SUMMARY:Move-in for First Year Students
+DESCRIPTION:Move-in for First Year Students\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:New Student Orientation
+END:VALARM
+DTSTART;VALUE=DATE:20220824
+DTEND;VALUE=DATE:20220830
+UID:07QkiuZTq8UcA8BZjJzvyGG5@stanza.co
+SUMMARY:New Student Orientation
+DESCRIPTION:New Student Orientation\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Opening Exercises and Freshman Convocation
+END:VALARM
+DTSTART;VALUE=DATE:20220829
+DTEND;VALUE=DATE:20220829
+UID:8MQyoGk9AB8oLtiB2hfQIrAM@stanza.co
+SUMMARY:Opening Exercises and Freshman Convocation
+DESCRIPTION:Opening Exercises and Freshman Convocation\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:First day of classes
+END:VALARM
+DTSTART;VALUE=DATE:20220830
+DTEND;VALUE=DATE:20220830
+UID:vswce8m5Ttz0UED9X0eBtQW2@stanza.co
+SUMMARY:First day of classes
+DESCRIPTION:First day of classes\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Labor Day (no classes)
+END:VALARM
+DTSTART;VALUE=DATE:20220905
+DTEND;VALUE=DATE:20220905
+UID:242k-uCOC0ZVcvDDrHeiq6ZQ@stanza.co
+SUMMARY:Labor Day (no classes)
+DESCRIPTION:Labor Day (no classes)\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fall Term Break
+END:VALARM
+DTSTART;VALUE=DATE:20221006
+DTEND;VALUE=DATE:20221010
+UID:TbS-BgMoX3HZgHTtw2CMkKJC@stanza.co
+SUMMARY:Fall Term Break
+DESCRIPTION:Fall Term Break\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Classes Resume
+END:VALARM
+DTSTART;VALUE=DATE:20221010
+DTEND;VALUE=DATE:20221010
+UID:zfqjK89xchGENUoy5S5l5NJf@stanza.co
+SUMMARY:Classes Resume
+DESCRIPTION:Classes Resume\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Homecoming (Yale)
+END:VALARM
+DTSTART;VALUE=DATE:20221022
+DTEND;VALUE=DATE:20221022
+UID:72J3bfEFQKofhfx4zn2brqwJ@stanza.co
+SUMMARY:Homecoming (Yale)
+DESCRIPTION:Homecoming (Yale)\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Family Weekend (Harvard)
+END:VALARM
+DTSTART;VALUE=DATE:20221111
+DTEND;VALUE=DATE:20221114
+UID:HIxutbuZsVNChaJ4fbPmhoe-@stanza.co
+SUMMARY:Family Weekend (Harvard)
+DESCRIPTION:Family Weekend (Harvard)\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Thur-Fri class schedule on Tue-Wed
+END:VALARM
+DTSTART;VALUE=DATE:20221122
+DTEND;VALUE=DATE:20221124
+UID:fvrkP1gN5NgzX0MI6tglkkSO@stanza.co
+SUMMARY:Thur-Fri class schedule on Tue-Wed
+DESCRIPTION:Thur-Fri class schedule on Tue-Wed\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Thanksgiving Break
+END:VALARM
+DTSTART;VALUE=DATE:20221124
+DTEND;VALUE=DATE:20221128
+UID:4hN4cCqsrfVJ4Gw8di35Vg5h@stanza.co
+SUMMARY:Thanksgiving Break
+DESCRIPTION:Thanksgiving Break\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Classes Resume
+END:VALARM
+DTSTART;VALUE=DATE:20221128
+DTEND;VALUE=DATE:20221128
+UID:4zTf9enSNHfdi757CumchnPY@stanza.co
+SUMMARY:Classes Resume
+DESCRIPTION:Classes Resume\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Last day of classes
+END:VALARM
+DTSTART;VALUE=DATE:20221212
+DTEND;VALUE=DATE:20221212
+UID:5JHAiajb-VXIBfgXHPJAj3Ip@stanza.co
+SUMMARY:Last day of classes
+DESCRIPTION:Last day of classes\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reading Days
+END:VALARM
+DTSTART;VALUE=DATE:20221213
+DTEND;VALUE=DATE:20221215
+UID:YMJH61B3RbSt_ciVBPz4fmKq@stanza.co
+SUMMARY:Reading Days
+DESCRIPTION:Reading Days\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Final Examinations
+END:VALARM
+DTSTART;VALUE=DATE:20221215
+DTEND;VALUE=DATE:20221223
+UID:nUdcxutk2WQd2QMPI_ki3LhZ@stanza.co
+SUMMARY:Final Examinations
+DESCRIPTION:Final Examinations\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fall Term ends
+END:VALARM
+DTSTART;VALUE=DATE:20221222
+DTEND;VALUE=DATE:20221222
+UID:1CrZgPG--NBvTYc_kTDGTdi-@stanza.co
+SUMMARY:Fall Term ends
+DESCRIPTION:Fall Term ends\n\n\n\n🙌New year, new calendar. Add schedules you love with Stanza+ and create a personal calendar you'll look forward to: http://bit.ly/Stanza-Learn-More\n\nRemove this schedule: stza.co/$delete?trk=NlcZ\n\n👍 or 👎 this schedule? Review it: stza.co/$review?trk=NlcZ
+STATUS:CONFIRMED
+DTSTAMP:20210115T155925Z
+CREATED:20210115T155925Z
+LAST-MODIFIED:20210115T155925Z
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
