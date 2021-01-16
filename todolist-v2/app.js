@@ -72,11 +72,19 @@ app.get("/register", function(req, res){
 });
 
 app.get("/essentials", function(req, res){
-  res.render("essentials");
+  if (!req.isAuthenticated()){
+    res.redirect("/");
+  }else {
+    res.render("essentials");
+  }
 });
 
 app.get("/calendar", function(req, res){
-  res.render("calendar");
+  if (!req.isAuthenticated()){
+    res.redirect("/");
+  }else{
+    res.render("calendar");
+  }
 });
 
 
@@ -225,29 +233,36 @@ app.post("/delete", function (req, res) {
 });
 
 app.get("/:selectedDate", function (req,res){
-  const selectedDate = _.capitalize(req.params.selectedDate);
+  if (!req.isAuthenticated()){
+    res.redirect("/");
+  }else {
+    const selectedDate = _.capitalize(req.params.selectedDate);
 
-  //selectedDate is the date selected
-  Data.findOne({username: username, date:selectedDate}, function (err, foundList){
-    if (!err){
-      if (!foundList){
-        //create a new list
-        const data = new Data({
-          username: username,
-          date: selectedDate,
-          items: [defaultItem]
-        });
-        console.log("hello");
-        //save the list into db
-        data.save();
-        res.redirect("/"+selectedDate);
-      }else{
-        //show an existing list
-        res.render("listForSelectedDate",{listTitle:foundList.date,newListItems:foundList.items, nameOfUsr: username});
+    //selectedDate is the date selected
+    Data.findOne({username: username, date: selectedDate}, function (err, foundList) {
+      if (!err) {
+        if (!foundList) {
+          //create a new list
+          const data = new Data({
+            username: username,
+            date: selectedDate,
+            items: [defaultItem]
+          });
+          console.log("hello");
+          //save the list into db
+          data.save();
+          res.redirect("/" + selectedDate);
+        } else {
+          //show an existing list
+          res.render("listForSelectedDate", {
+            listTitle: foundList.date,
+            newListItems: foundList.items,
+            nameOfUsr: username
+          });
+        }
       }
-    }
-  });
-
+    });
+  }
 });
 
 
