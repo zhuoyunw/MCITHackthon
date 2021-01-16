@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cc5ceb54-e9a7-4187-9858-e1cd5b232075" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/login-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/bootstrap-social.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/calendar.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/essentials.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/login-page.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requireLogged.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/calendar.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/essentials.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
@@ -22,11 +22,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/requireLogged.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/list.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web pages/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web pages/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +67,17 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.home.ejs">
+    <configuration name="home.ejs" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/todolist-v2/views/home.ejs" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/todolist-v2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -85,6 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="JavaScript Debug.home.ejs" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.list.ejs" />
       </list>
