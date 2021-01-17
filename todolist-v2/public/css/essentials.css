@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 html {
     box-sizing: border-box;
@@ -55,18 +55,10 @@ div.singleUrl:hover{
     background-color: #ff999a;
 }*/
 
+
+
+
 /*
-ul {
-
-    margin-top: 100px;
-    left: 200px;
-    align-items: center;
-    list-style-type:'\1F4A1';
-    background-color: #fff3e0;
-    width:100%;
-}
-
-
 
 li span {
     position: relative;

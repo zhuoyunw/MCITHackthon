@@ -335,8 +335,9 @@ div[data-title][pos*='-20px']:hover:after {
   padding: 0;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
   font-size: 3em;
-    margin-bottom: 40px;
+    margin-bottom: 2px;
     text-align: center;
+    font-weight: bold;
 
 }
 
@@ -351,7 +352,7 @@ div[data-title][pos*='-20px']:hover:after {
 input:placeholder-shown {
   /*border: 2px solid #ff9999;*/
 
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 5px 5px 5px 5px;
   cursor: pointer;
 
 }
@@ -360,7 +361,7 @@ input::placeholder {
 }
 
 button.add {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ff9999;
 }
 

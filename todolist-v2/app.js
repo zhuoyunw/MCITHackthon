@@ -32,7 +32,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/todolistDB2", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://hanyew:1926@cluster0.ayfxg.mongodb.net/todolistDB2", {useNewUrlParser: true});
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema ({
@@ -135,23 +135,7 @@ app.get("/today",function(req,res){
       }else{
         res.render("list",{listTitle:"Today",newListItems:foundList.items, nameOfUsr: username});
       }
-      // console.log("check the ")
-      // console.log(foundList);
-
-
-
-      // if (foundItems.length === 0){
-      //   Item.insertMany(defaultItems, function (err) {
-      //   if (err){
-      //     console.log(err);
-      //   }else {
-      //     console.log("Successfully saved default items to DB.");
-      //   }
-      // });
-      //   res.redirect("/");
-      // }else{
-    })
-  }
+      /
 
   });
 
@@ -305,10 +289,6 @@ app.get("/:selectedDate", function (req,res){
         }
       }
     });
-  }
-});
-
-
 
 let port = process.env.PORT;
 if (port == null || port == "") {
