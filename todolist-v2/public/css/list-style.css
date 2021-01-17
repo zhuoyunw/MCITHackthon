@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 html {
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
@@ -13,10 +14,12 @@ body {
     /*display: relative;*/
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 header {
+
     width: 100%;
     /*background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);*/
     margin-top: 60px;
@@ -24,7 +27,15 @@ header {
     color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    /*position: fixed;*/
+/*=======*/
+/*    !*width: 100%;*!*/
+/*    background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);*/
+/*    margin-top: 40px;*/
+/*    padding: 60px 40px;*/
+/*    text-align: center;*/
+
+/*>>>>>>> 8a4f219ac5c224960efe86d2b38148c2dde2b773*/
+/*    !*position: fixed;*!*/
 
 }
 
@@ -33,15 +44,10 @@ h4 {
     font-family: Arial;
     font-size: 1em;
     letter-spacing: 2px;
-    margin-bottom: 5px;
-    /*
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color:black;
 
-
-    font-weight: bold;*/
 }
 
 #Philadelphia_z161 {

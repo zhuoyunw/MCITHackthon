@@ -1,16 +1,47 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="/today">Upenn To-Do List</a>
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="expandme">
-    <div class="navbar-nav">
-      <a href="/today" class="nav-item nav-link">Today</a>
-      <a href="/calendar" class="nav-item nav-link">Calendar</a>
-      <a href="/essentials" class="nav-item nav-link">Essentials</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+    nav a {
+      font-family: 'Dosis', sans-serif;
+      color: white;
+    }
+    nav a:hover {
+      cursor: pointer;
+      background-color: #ff9999;
+    }
+    button.logout {
+      border-radius: 20px;
+      font-family: 'Dosis', sans-serif;
+    }
+    button.logout:hover {
+      cursor: pointer;
+      background-color: #ff9999;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/today">Upenn To-Do List</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="expandme">
+      <div class="navbar-nav">
+        <a href="/today" class="nav-item nav-link">Today</a>
+        <a href="/calendar" class="nav-item nav-link">Calendar</a>
+        <a href="/essentials" class="nav-item nav-link">Essentials</a>
+      </div>
+      <form class="form-inline ml-auto" action="/logout" method="get">
+        <button onclick="" class="logout" type="submit">Log Out</button>
+      </form>
     </div>
-    <form class="form-inline ml-auto" action="/logout" method="get">
-      <button onclick="" class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button>
-    </form>
-  </div>
-</nav>
+  </nav>
+</body>
+

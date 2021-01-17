@@ -23,32 +23,24 @@
 
 
   </head>
-  <style>
-    .clock{
-      text-align:center;
-    }
-  </style>
+
 
   <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/today">Upenn To-Do List</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="expandme">
-      <div class="navbar-nav">
-        <a href="/today" class="nav-item nav-link">Today</a>
-        <a href="/calendar" class="nav-item nav-link">Calendar</a>
-        <a href="/essentials" class="nav-item nav-link">Essentials</a>
+
+
+  <%- include('partials/nav') %>
+    <header>
+      <div>
+      <h3>Welcome! <%= nameOfUsr %></h3>
       </div>
+
 <!--      <div class="usernameDiv">-->
 <!--        <h4 style="font-size: 18px">Welcome! <%= nameOfUsr %></h4>-->
 <!--      </div>-->
       <form class="form-inline ml-auto" action="/logout" method="get">
         <button onclick="" class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button>
       </form>
-    </div>
-  </nav>
+
     <header>
 
 
