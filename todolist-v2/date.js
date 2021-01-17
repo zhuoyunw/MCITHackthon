@@ -30,7 +30,6 @@ exports.getTime = function (){
 }
 
 
-
 exports.getToday=function formatDate(param) {
     const date = new Date(param)
     const Y = date.getFullYear()

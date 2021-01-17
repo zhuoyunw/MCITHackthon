@@ -153,7 +153,7 @@ app.get("/today",function(req,res){
             const data = new Data({
               username: username,
               date: today,
-              items: [item]
+              items: item
             });
             //save the list into db
             data.save();
