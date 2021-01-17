@@ -1,5 +1,4 @@
 var weeks = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-var months = ['2021-01', '2021-02', '2021-03', '2021-04', '2021-05', '2021-06', '2021-07']
 var calendar = document.getElementById('calendar');
 var monthsHtml = document.querySelector('#calendar .months-con');
 var weeksHtml = document.querySelector('#calendar .weeks');
@@ -7,11 +6,34 @@ var daysHtml = document.querySelector('#calendar .days');
 var selDayHtml = document.querySelector('.selNowDays')
 var pre = document.querySelector('#pre');
 var next = document.querySelector('#next');
-var nowSelYear = null;
-var nowSelMonth = null;
-var nowSelDay = formatDate(new Date()).substring(8, 10);
+function isInteger(value) {
+    return /^\d+$/.test(value);
+}
+if (isInteger(window.location.href.slice(-3))) {
+    var nowSelYear = window.location.href.slice(-8, -4);
+    var nowSelMonth = window.location.href.slice(-4, -2);
+    var nowSelDay = parseInt(window.location.href.slice(-2));
+    var shift = parseInt(nowSelMonth) - 1;
+}
+else {
+    var datetemp = formatDate(new Date());
+    var nowSelYear = datetemp.substring(0, 4);
+    var nowSelMonth = datetemp.substring(5, 7);
+    var nowSelDay = parseInt(datetemp.substring(8, 10));
+    var shift = 0;
+}
+
+var months = [];
+for (let i = 1; i <= 7; i++) {
+    if (parseInt(nowSelMonth) + i - 1 > 12) {
+        months.push((parseInt(nowSelYear) + 1).toString() + '-' + (parseInt(nowSelMonth) + i - 13).toString())
+    }
+    else {
+        months.push(nowSelYear + '-' + (parseInt(nowSelMonth) + i - 1).toString().padStart(2, "0"))
+    }
+}
+
 var nowMonthIndex = 0;
-var shift = 0;
 
 function getMonths(ind) {
     var str = ''
@@ -91,8 +113,7 @@ function getDays(year, month) {
         if ((i + daysFirst) % 7 == 1) {
             str += '<div class="week">'
         }
-        // str += '<div id="' + i + '"><span data-title="' + dis + '" data-days="' + i + '" class="' + css + ' ' + css2 + '">' + i + '</span></div>'
-        str += '<div class="day other" id="days_number' + i.toString().padStart(2, "0") + '">'//<div class="day-name"> + weeks[(i + daysFirst) % 7] + '</div>
+        str += '<div class="day other" id="days_number' + i.toString().padStart(2, "0") + '">'
             + '<div data-days="'
             + i + '" class="' + css + ' ' + css2 + ' day-number">'
             + i + '</div><div class="day-events" id="days'
@@ -121,7 +142,6 @@ function getDays(year, month) {
                 var tempdayEnd = parseInt(array[i].substring(15, 17));
                 for (let j = tempdayStart; j <= tempdayEnd || tempdayStart > tempdayEnd; j++) {
                     var element = document.getElementById("days" + j.toString().padStart(2, "0"));
-                    // element.innerHTML += '<span class="blue"><p class="todoinfo">' + array[i].slice(18) + '</p></span>';
                     element.innerHTML += '<span class="blue"></span>';
 
                     var element2 = document.getElementById("days_number" + j.toString().padStart(2, "0"));
@@ -187,13 +207,13 @@ function preMonth() {
         newMonth = newMonth.toString().padStart(2, "0");
         newYear = (newYear + parseInt(months[0].substring(0, 4))).toString();
         months.unshift(newYear + '-' + newMonth)
-        nowSelDay = 01
+        nowSelDay = 1
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex--
-        nowSelDay = 01
+        nowSelDay = 1
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
@@ -216,13 +236,13 @@ function nextMonth() {
         newMonth = newMonth.toString().padStart(2, "0");
         newYear = (newYear + parseInt(months[5].substring(0, 4))).toString();
         months.push(newYear + '-' + newMonth)
-        nowSelDay = 01
+        nowSelDay = 1
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
     } else {
         nowMonthIndex++
-        nowSelDay = 01
+        nowSelDay = 1
         monthsHtml.innerHTML = getMonths(nowMonthIndex)
         daysHtml.innerHTML = getDays(nowSelYear, nowSelMonth)
         selDayHtml.innerHTML = nowSelDate()
@@ -231,7 +251,7 @@ function nextMonth() {
 
 function nowSelDate() {
     var str = ''
-    if (nowSelDay == formatDate(new Date()).substring(8, 10)) str = 'Today is ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
+    if ((nowSelYear + '-' + nowSelMonth + '-' + nowSelDay.toString().padStart(2, "0")) == formatDate(new Date(), 'yyyy-MM-dd')) str = 'Today is ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
     else str = 'You select ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
     return str + '<p class="redirect-todo"><a class="btn btn-outline-warning btn-sm" href="/' + nowSelYear + nowSelMonth + nowSelDay.toString().padStart(2, "0")
         + '"role="button">  Todo  </a></p>'
@@ -258,11 +278,9 @@ window.onload = function () {
     document.querySelector('.days').onclick = function (ev) {
         var ev = ev || window.event
         var target = ev.target || ev.srcElement
-        // if (target.nodeName.toLowerCase() == 'div') {
         if (target.classList.contains('other')) {
-            // nowSelDay = target.dataset.days
             let children = target.childNodes
-            nowSelDay = children[0].innerHTML
+            nowSelDay = parseInt(children[0].innerHTML)
         }
         if (target.classList.contains('day-number'))
             nowSelDay = target.dataset.days
@@ -292,4 +310,10 @@ window.onload = function () {
             nextMonth()
         }
     }
+}
+
+
+if (window.location.href.slice(-3)) {
+    var element = document.getElementById("days_number" + nowSelDay.toString().padStart(2, "0"));
+    element.classList.add('chosen-day');
 }
