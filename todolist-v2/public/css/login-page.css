@@ -14,7 +14,7 @@ body {
 
 #main-holder {
     width: 50%;
-    height: 70%;
+    height: 90%;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -25,6 +25,7 @@ body {
 
 #login-header {
     color: #3a3a3a;
+    font-size: 60px;
 }
 
 #login-error-msg-holder {
@@ -65,16 +66,21 @@ body {
 
 .login-form-field {
     border: none;
-    border-bottom: 1px solid #3a3a3a;
-    border-top: 1px solid #3a3a3a;
+    /*border-bottom: 1px solid #3a3a3a;*/
+    /*border-top: 1px solid #3a3a3a;*/
     margin-bottom: 10px;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     outline: none;
-    padding: 0px 0px 5px 5px;
+    padding: 10px 10px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    height: 30px;
+
 }
 
 #login-form-submit {
-    width: 100%;
+    width: 90%;
     padding: 7px;
     border: none;
     border-radius: 5px;
@@ -83,10 +89,13 @@ body {
     background-color: #3a3a3a;
     cursor: pointer;
     outline: none;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
 }
 
 #cancel {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     padding: 7px;
     border: none;
@@ -96,8 +105,19 @@ body {
     background-color: #3a3a3a;
     cursor: pointer;
     outline: none;
+    margin-bottom: 20px;
 }
 
 .register-field {
     padding: 7px;
+    font-size: 15px;
+}
+
+h1{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 36px;
+}
+
+.register-field:hover{
+    text-decoration: none;
 }

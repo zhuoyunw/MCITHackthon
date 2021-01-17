@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="css/login-page.css">
-  <script defer src="login-page.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Nothing+You+Could+Do&display=swap" rel="stylesheet"></head>
+
+<script defer src="login-page.js"></script>
   <style>
     a.register-field:link {color: cadetblue;text-decoration:none;}
     a.register-field:visited {color: darkmagenta;test-decoration:none;}
@@ -16,11 +19,11 @@
 
 <body>
 <main id="main-holder" stype="cursor: pointer; display: block;">
-  <h1 id="login-header"> To-do List Login </h1>
+  <h1 id="login-header"> Login </h1>
 
-  <div id="login-error-msg-holder">
-    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-  </div>
+<!--  <div id="login-error-msg-holder">-->
+<!--    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>-->
+<!--  </div>-->
 
   <form id="login-form" action="/login" method="post">
     <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">

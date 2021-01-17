@@ -1,16 +1,48 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <title>UPENN to-do list</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/homepage-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Nothing+You+Could+Do&display=swap" rel="stylesheet"></head>
 
-<div class="jumbotron centered">
-  <div class="container">
-    <img src="/1.png" style="width: 200px; margin-top: 10px;">
-    <h1 class="display-3" style="margin-bottom: 50px; margin-top: 50px">UPENN to-do list</h1>
-    <p class="lead" style="margin-bottom: 50px">Welcome to your personal calendar!</p>
-    <hr>
-    <a class="btn btn-light btn-lg" href="/register" role="button" >Register</a>
-    <a class="btn btn-dark btn-lg" href="/login" role="button" >Login</a>
-
+<body>
+<div class="infoDiv">
+  <div class="logo">
+    <img src="/1.png" style="width: 200px">
+  </div>
+  <div class="logan">
+    <h1>UPenn to-do list</h1><br>
+    <h3>Your personal calendar</h3>
+  </div>
+  <div class="btnForUse">
+    <a class="btn btn-light btn-lg" href="/register" role="button" style="margin-right: 15px; margin-left: 15px">Register</a>
+        <a class="btn btn-dark btn-lg" href="/login" role="button" style="margin-right: 15px; margin-left: 15px">Login</a>
   </div>
 </div>
 
-<%- include('partials/footer') %>
+<div class="footer">
+  <div class="foot_content">
+    <p>Created by Z Wang Y Kan and H Wang.</p>
+  </div>
+</div>
+</body>
+</html>
+<!--<div class="jumbotron centered">-->
+<!--  <div class="container">-->
+<!--    <img src="/1.png" style="width: 200px">-->
+<!--    <h1 class="display-3" style="margin-bottom: 50px; margin-top: 50px">UPENN to-do list</h1>-->
+<!--    <p class="lead" style="margin-bottom: 50px">Welcome to your personal calendar!</p>-->
+<!--    <hr>-->
+<!--    <a class="btn btn-light btn-lg" href="/register" role="button" >Register</a>-->
+<!--    <a class="btn btn-dark btn-lg" href="/login" role="button" >Login</a>-->
+
+<!--  </div>-->
+<!--</div>-->
+
+<!--<%- include('partials/footer') %>-->
