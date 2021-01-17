@@ -1,0 +1,372 @@
+@charset 'utf-8';
+html {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    position: absolute; width:100%; height: 100%;
+}
+
+body {
+    background-color:#fcee6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+  background-color: #fcee6d;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar {
+    font-family: 'Dosis', sans-serif !important;
+    box-sizing:border-box; 
+    width:420px; 
+    background:#29323f; 
+    border-radius:5px; 
+    overflow:hidden; 
+    display:block; 
+    box-shadow:0 0 10px #201d1c; 
+    margin-top:100px;
+    margin-bottom:100px
+}
+
+.selNowDays {
+    font-size:20px;
+    font-weight:700; 
+    color:#fcee6d; 
+    display:block; 
+    margin:10px 0 5px 0;
+    padding-bottom: 10px; 
+    text-transform:uppercase; 
+    text-align:center; 
+    box-shadow: 5px 10px 20px rgba(0,0,0,.2);
+    letter-spacing:1px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.months {
+    color: #f7f3eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+}
+
+.months strong {
+  width: 8%;
+  text-align: center;
+}
+
+.months-outer {
+  overflow: hidden;
+  width: 84%;
+  height: 36px;
+}
+
+.months-con-outer {
+  width: 100%;
+  height: 52px;
+  overflow-x: auto;
+}
+
+.months-con {
+  display: inline-block;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.months-con span {
+  display: inline-block;
+  width: 17%;
+  height: 36px;
+  padding: 0 5px;
+  line-height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.months-con .sel-month {
+  color: #f7f3eb;
+  background: #269aff;
+  width: 60px;
+}
+
+.months-con .other-month {
+  width: 48px;
+}
+
+
+.weeks {
+    color: #f7f3eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.weeks span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 34px;
+  color: #f7f3eb;
+  font-size: 14px;
+}
+
+.days {
+    color: #f7f3eb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.days span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.5px;
+  height: 45.5px;
+  cursor: pointer;
+}
+
+.days span:hover, .days span:focus {
+    background-color:#269aff;
+    cursor: pointer;
+}
+.days .sel-days {
+  color: #f7f3eb;
+  background: #269aff;
+}
+
+
+.today-day {
+  border:2px solid yellow; 
+  box-sizing:border-box!important; 
+  border-radius:50%;
+  transition: all 200ms ease-in-out;
+}
+
+.day {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;  
+  position: relative;
+  z-index: 100;
+}
+
+.day.other {
+ color: rgb(255, 255, 255);
+}
+
+.day.today {
+  color: rgba(156, 202, 235, 1);
+}
+
+.day-name {
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.062);
+  letter-spacing: .7px;
+}
+
+.day-number {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.514);
+  letter-spacing: 1.5px;
+}
+.other:hover {
+    background-color:#269aff;
+    cursor: pointer;
+}
+.chosen-day{
+  background-color:#269aff;
+  cursor: pointer;
+}
+
+
+.day .day-events {
+  list-style: none;
+  margin-top: 3px;
+  text-align: center;
+  height: 12px;
+  line-height: 6px;
+  overflow: hidden;
+}
+
+.day .day-events span {
+  vertical-align: top;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  line-height: 5px;
+  margin: 0 1px;
+}
+
+.blue { background: rgba(156, 202, 235, 1); }
+
+ 
+div[data-title][pos*='-100px']:hover:after {
+  font:15px; 
+  font-weight:1000; 
+  content:attr(data-title); 
+  position: absolute; 
+  opacity: 1 !important;;
+  margin:-100px -100px 1000px; 
+  border:1px solid #f7f3eb; 
+  background-color: #282423;
+  color: #f7f3eb; 
+  /* padding:10px;  */
+  z-index:9999;  
+  min-width:200px; 
+  max-width:200px;
+}
+
+ 
+div[data-title][pos*='-50px']:hover:after {
+  font:15px; 
+  font-weight:1000; 
+  content:attr(data-title); 
+  position: absolute; 
+  opacity: 1 !important;;
+  margin:-100px -50px 1000px; 
+  border:1px solid #f7f3eb; 
+  background-color: #282423;
+  color: #f7f3eb; 
+  /* padding:10px;  */
+  z-index:9999;  
+  min-width:200px; 
+  max-width:200px;
+}
+
+ 
+div[data-title][pos*='-150px']:hover:after {
+  font:15px; 
+  font-weight:1000; 
+  content:attr(data-title); 
+  position: absolute; 
+  opacity: 1 !important;;
+  margin:-100px -150px 1000px; 
+  border:1px solid #f7f3eb; 
+  background-color: #282423;
+  color: #f7f3eb; 
+  /* padding:10px;  */
+  z-index:9999;  
+  min-width:200px; 
+  max-width:200px;
+}
+
+ 
+div[data-title][pos*='-180px']:hover:after {
+  font:15px; 
+  font-weight:1000; 
+  content:attr(data-title); 
+  position: absolute; 
+  opacity: 1 !important;;
+  margin:-100px -180px 1000px; 
+  border:1px solid #f7f3eb; 
+  background-color: #282423;
+  color: #f7f3eb; 
+  /* padding:10px;  */
+  z-index:9999;  
+  min-width:200px; 
+  max-width:200px;
+}
+
+ 
+div[data-title][pos*='-20px']:hover:after {
+  font:15px; 
+  font-weight:1000; 
+  content:attr(data-title); 
+  position: absolute; 
+  opacity: 1 !important;;
+  margin:-100px -20px 1000px; 
+  border:1px solid #f7f3eb; 
+  background-color: #282423;
+  color: #f7f3eb; 
+  /* padding:10px;  */
+  z-index:9999;  
+  min-width:200px; 
+  max-width:200px;
+}
+
+.redirect-todo {
+  text-align: right;
+  margin:-30px 5px 5px; 
+}
+
+
+#Philadelphia_z161 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  display: block;
+}
+
+#heading {
+  font-family: "Gochi Hand", cursive;
+  padding: 0;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  font-size: 1.5rem;
+}
+
+
+
+.item {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+input:placeholder-shown {
+  /*border: 2px solid #ff9999;*/
+  margin-top: 20px;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+input::placeholder {
+  font-family: 'Dosis', sans-serif;
+}
+
+button.add {
+  border-radius: 20px;
+  background-color: #ff9999;
+}
+
+button.add:hover {
+  cursor: pointer;
+  background-color: #3399ff;
+}
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .box {
+    margin-top: 100px;
+    width:50%;  
+  }
+}
