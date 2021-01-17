@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 html {
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
@@ -19,7 +19,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /*text-align: center;*/
   text-transform: uppercase;
 }
 
@@ -33,7 +33,9 @@ body {
     display:block; 
     box-shadow:0 0 10px #201d1c; 
     margin-top:100px;
-    margin-bottom:100px
+    margin-bottom:100px;
+    margin-left: 100px;
+    height: 475px;
 }
 
 .selNowDays {
@@ -223,7 +225,7 @@ body {
 
  
 div[data-title][pos*='-100px']:hover:after {
-  font:15px; 
+  font-size:15px;
   font-weight:1000; 
   content:attr(data-title); 
   position: absolute; 
@@ -240,7 +242,7 @@ div[data-title][pos*='-100px']:hover:after {
 
  
 div[data-title][pos*='-50px']:hover:after {
-  font:15px; 
+  font-size:15px;
   font-weight:1000; 
   content:attr(data-title); 
   position: absolute; 
@@ -257,7 +259,7 @@ div[data-title][pos*='-50px']:hover:after {
 
  
 div[data-title][pos*='-150px']:hover:after {
-  font:15px; 
+  font-size:15px;
   font-weight:1000; 
   content:attr(data-title); 
   position: absolute; 
@@ -274,7 +276,7 @@ div[data-title][pos*='-150px']:hover:after {
 
  
 div[data-title][pos*='-180px']:hover:after {
-  font:15px; 
+  font-size:15px;
   font-weight:1000; 
   content:attr(data-title); 
   position: absolute; 
@@ -291,7 +293,7 @@ div[data-title][pos*='-180px']:hover:after {
 
  
 div[data-title][pos*='-20px']:hover:after {
-  font:15px; 
+  font-size:15px;
   font-weight:1000; 
   content:attr(data-title); 
   position: absolute; 
@@ -320,17 +322,22 @@ div[data-title][pos*='-20px']:hover:after {
 }
 
 .box {
-  margin-top: 0;
-  margin-left: 0;
+  margin-left: 50px;
   width: 100%;
   display: block;
+    padding: 50px;
+    background-color: #fff3e0;
+    border-radius: 10px;
 }
 
 #heading {
-  font-family: "Gochi Hand", cursive;
+    font-family: 'Nothing You Could Do', cursive;
   padding: 0;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  font-size: 1.5rem;
+  font-size: 3em;
+    margin-bottom: 40px;
+    text-align: center;
+
 }
 
 
@@ -343,9 +350,10 @@ div[data-title][pos*='-20px']:hover:after {
 
 input:placeholder-shown {
   /*border: 2px solid #ff9999;*/
-  margin-top: 20px;
+
   border-radius: 20px 20px 20px 20px;
   cursor: pointer;
+
 }
 input::placeholder {
   font-family: 'Dosis', sans-serif;
