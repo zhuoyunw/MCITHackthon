@@ -18,19 +18,20 @@ body {
 
 header {
     width: 100%;
-    background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);
-    margin-top: 40px;
+    /*background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);*/
+    margin-top: 60px;
     padding: 60px 40px;
-    color: white;
+    color: black;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     /*position: fixed;*/
 
 }
 
-h3 {
+h4 {
     /*display: block;*/
-    font-family: 'Dosis', sans-serif;
-    font-size: 2em;
+    font-family: Arial;
+    font-size: 1em;
     letter-spacing: 2px;
     margin-bottom: 5px;
     /*
@@ -51,45 +52,54 @@ h3 {
 }
 
 .box {
-    margin-top: 50px;
-    margin-left: 45%;
-    width: 100%;
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 50%;
     display: block;
+    padding: 50px;
+    background-color: #fff3e0;
 }
 
 
 
 #heading {
-    font-family: 'Dosis', sans-serif;
-    font-size: 3em;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4em;
     margin-bottom: 20px;
     font-weight: bold;
+    margin-left: 60%;
 }
 
 
 .item {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 30px;
+
 }
 
 input:placeholder-shown {
     /*border: 2px solid #ff9999;*/
     margin-top: 20px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
     cursor: pointer;
+
 }
 input::placeholder {
     font-family: 'Dosis', sans-serif;
 }
 
 button.add {
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #ff9999;
 }
 
 button.add:hover {
     cursor: pointer;
     background-color: #3399ff;
+}
+
+#linkweb {
+    font-size: 80px;
 }
 

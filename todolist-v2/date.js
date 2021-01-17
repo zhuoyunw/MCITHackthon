@@ -25,5 +25,6 @@ exports.getTime = function (){
         hour: "numeric",
         minute: "numeric"
     }
+    // get date
     return day = today.toLocaleDateString("en-US", options);
 }
