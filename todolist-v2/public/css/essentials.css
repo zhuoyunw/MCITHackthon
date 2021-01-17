@@ -24,6 +24,9 @@ body {
     text-shadow: 0 0 5px #3a3a3a;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 
 div.variousUrl{
     width: 100%;
@@ -31,6 +34,7 @@ div.variousUrl{
     text-align: center;
     background-color: #fff3e0;
 }
-div.map{
 
+div.singleUrl:hover{
+    background-color: #ff999a;
 }
