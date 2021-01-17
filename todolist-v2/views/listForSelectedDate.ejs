@@ -1,92 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>To Do List</title>
-<!--    <link rel="stylesheet" href="css/styles.css">-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Today</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <!--    <link rel="stylesheet" href="css/styles.css">-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Today</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/calendarForSelectedDate.css">
 
 
-  </head>
-  <body>
+</head>
+
+<body>
   <%- include('partials/nav') %>
-
-  <div id="calendar" class="calendar">
-    <div class="selNowDays"></div>
-    <div class="months">
-      <strong id="pre" class="pre">«</strong>
-      <div class="months-outer">
-        <div class="months-con-outer">
-          <div class="months-con"></div>
+    <!--  Calendar-->
+    <div class="panel">
+      <div id="calendar" class="calendar">
+        <div class="selNowDays"></div>
+        <div class="months">
+          <strong id="pre" class="pre">«</strong>
+          <div class="months-outer">
+            <div class="months-con-outer">
+              <div class="months-con"></div>
+            </div>
+          </div>
+          <strong id="next" class="next">»</strong>
+        </div>
+        <div class="weeks"></div>
+        <div class="days">
         </div>
       </div>
-      <strong id="next" class="next">»</strong>
+
+
+      <!--  todolist-->
+      <div class="box">
+        <div id="heading"><span>
+            Your To-DO List
+          </span></div>
+        <!--<h1> <%=listTitle%></h1>-->
+
+        <!--<div class="">-->
+        <% newListItems.forEach(function (item){ %>
+          <form action="/delete" method="post">
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="<%=item.id%>" onchange="this.form.submit()">
+              <p class="list" style="display:inline">
+                <%=item.todoData%>
+              </p>
+            </div>
+            <input type="hidden" name="listName" value="<%= listTitle %>">
+            <input type="hidden" name="nameOfUsr" value="<%= nameOfUsr %>">
+          </form>
+
+          <%}) %>
+
+            <form class="" action="/today" method="post">
+              <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+              <button class="add" type="submit" name="list" value="<%= listTitle %>">+</button>
+            </form>
+      </div>
     </div>
-    <div class="weeks"></div>
-    <div class="days">
-    </div>
-  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-          crossorigin="anonymous"></script>
-  <script src="js/web.js"></script>
 
-  <h3>Welcome! <%= nameOfUsr %></h3>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <script src="js/web.js"></script>
+</body>
 
-
-<!--  todolist-->
-  <div class="box" id="heading">
-    <h1> <%=listTitle%></h1>
-  </div>
-<div class="box">
-    <% newListItems.forEach(function (item){ %>
-  <form action="/delete" method="post">
-    <div class="item">
-      <input type="checkbox" name="checkbox" value = "<%=item.id%>" onchange="this.form.submit()">
-      <p><%=item.todoData%></p>
-    </div>
-    <input type="hidden" name="listName" value="<%= listTitle %>">
-    <input type="hidden" name="nameOfUsr" value="<%= nameOfUsr %>">
-  </form>
-
-  <%}) %>
-
-  <form class="" action="/today" method="post">
-    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-    <button type="submit" name="list" value="<%= listTitle %>">+</button>
-  </form>
-</div>
-
-<div>
-  <a href="/logout"><button type="submit" name="logOut">Log out</button></a>
-</div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-          crossorigin="anonymous"></script>
-  <script src="../web.js"></script>
-  </body>
 </html>
