@@ -74,7 +74,7 @@ app.get("/essentials", function(req, res){
   if (!req.isAuthenticated()){
     res.redirect("/");
   }else {
-    res.render("essentials");
+    res.render("essentials", {nameOfUsr: username});
   }
 });
 
@@ -82,7 +82,7 @@ app.get("/calendar", function(req, res){
   if (!req.isAuthenticated()){
     res.redirect("/");
   }else{
-    res.render("calendar");
+    res.render("calendar",{nameOfUsr: username});
   }
 });
 
@@ -272,7 +272,6 @@ app.get("/today",function(req,res){
                 date: selectedDate,
                 items: defaultItem
               });
-              console.log("hello");
               //save the list into db
               data.save();
               res.redirect("/" + selectedDate);
