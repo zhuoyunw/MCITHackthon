@@ -343,7 +343,7 @@ div[data-title][pos*='-20px']:hover:after {
 
 
 .item {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Bradley Hand', cursive;
   margin-bottom: 5px;
   font-size: 24px;
 }
@@ -356,7 +356,7 @@ input:placeholder-shown {
 
 }
 input::placeholder {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Bradley Hand', cursive;
 }
 
 button.add {

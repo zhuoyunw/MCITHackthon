@@ -28,6 +28,7 @@ h3{
 div.btnForUse{
     display: flex;
     justify-content: center;
+    font-family: 'Bradley Hand', cursive;
 }
 div.footer{
     background-color: #343a40;
@@ -35,6 +36,7 @@ div.footer{
     width: 100%;
     margin-top: 180px;
     padding-top: 5px;
+    font-family: 'Bradley Hand', cursive;
 }
 
 p{
