@@ -24,3 +24,13 @@ body {
     text-shadow: 0 0 5px #3a3a3a;
     text-decoration: none;
 }
+
+div.variousUrl{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #fff3e0;
+}
+div.map{
+
+}
