@@ -112,7 +112,9 @@ const dataSchema = {
 const Data = mongoose.model("Data",dataSchema);
 
 var today = new Date();
-today=date.getDate(today);
+today=date.getToday(today);
+
+console.log(today);
 
 app.get("/today",function(req,res){
   if (!req.isAuthenticated()){
@@ -159,7 +161,6 @@ app.get("/today",function(req,res){
             foundList.items.push(item);
             foundList.save();
           }
-          //   res.redirect("/"+customListName);
           res.redirect("/today");
         })
       } else {
