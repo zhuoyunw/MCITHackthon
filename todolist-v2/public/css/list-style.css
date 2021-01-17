@@ -12,8 +12,8 @@ html {
 body {
     background-color:#fcee6d;
     /*display: relative;*/
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -22,10 +22,10 @@ header {
 
     width: 100%;
     /*background: linear-gradient(to bottom, #fcee6d 5%, #ff9999 119%);*/
-    margin-top: 60px;
+    margin-top: 10px;
     padding: 60px 40px;
     color: black;
-    text-align: center;
+    /*text-align: center;*/
     font-family: 'Montserrat', sans-serif;
 /*=======*/
 /*    !*width: 100%;*!*/
