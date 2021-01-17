@@ -231,7 +231,8 @@ function nextMonth() {
 
 function nowSelDate() {
     var str = ''
-    str = 'Date: ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
+    if (nowSelDay == formatDate(new Date()).substring(8, 10)) str = 'Today is ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
+    else str = 'You select ' + nowSelYear + '/' + nowSelMonth + '/' + nowSelDay.toString().padStart(2, "0")
     return str + '<p class="redirect-todo"><a class="btn btn-outline-warning btn-sm" href="/' + nowSelYear + nowSelMonth + nowSelDay.toString().padStart(2, "0")
         + '"role="button">  Todo  </a></p>'
 }
