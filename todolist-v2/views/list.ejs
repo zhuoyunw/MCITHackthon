@@ -15,24 +15,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/list-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Nothing+You+Could+Do&display=swap" rel="stylesheet"></head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
 
 
   </head>
-  <body>
-  <%- include('partials/nav') %>
-    <header>
-      <div>
-      <h3>Welcome! <%= nameOfUsr %></h3>
-      </div>
-      <div>
-        <iframe src="http://free.timeanddate.com/clock/i7my89id/n198/fn7/fs36/tct/pct/pa10/th2/ts1" frameborder="0" width="200" height="70" allowTransparency="true"></iframe>
+  <style>
+    .clock{
+      text-align:center;
+    }
+  </style>
 
-        <!--        <span id="Philadelphia_z161" style="font-size:80px; margin: 0px auto"></span>-->
-<!--        <script src="//widget.time.is/t.js"></script>-->
-<!--        <script>-->
-<!--          time_is_widget.init({Philadelphia_z161:{time_format:"12hours:minutesAMPM"}});-->
-<!--        </script>-->
+  <body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/today">Upenn To-Do List</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="expandme">
+      <div class="navbar-nav">
+        <a href="/today" class="nav-item nav-link">Today</a>
+        <a href="/calendar" class="nav-item nav-link">Calendar</a>
+        <a href="/essentials" class="nav-item nav-link">Essentials</a>
       </div>
+<!--      <div class="usernameDiv">-->
+<!--        <h4 style="font-size: 18px">Welcome! <%= nameOfUsr %></h4>-->
+<!--      </div>-->
+      <form class="form-inline ml-auto" action="/logout" method="get">
+        <button onclick="" class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button>
+      </form>
+    </div>
+  </nav>
+    <header>
+
+
+
+
+  <center><h2 id="linkweb"></h2></center>
+
+  <script>
+    function time1(){
+      const today = new Date();
+      const options = {
+        hour: "numeric",
+        minute: "numeric"
+      }
+      return day = today.toLocaleString("en-US", options);
+    }
+    setInterval("linkweb.innerHTML=time1();",10);
+    // setInterval("linkweb.innerHTML=new Date().toLocaleString();",10);
+  </script>
     </header>
   <!--  todolist-->
   <div class="box">
@@ -72,6 +107,7 @@
           integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
           crossorigin="anonymous"></script>
   <script src="../web.js"></script>
+  
   </body>
 </html>
 
