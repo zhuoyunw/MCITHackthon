@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   /*text-align: center;*/
-  text-transform: uppercase;
+
 }
 
 .calendar {
@@ -344,9 +344,9 @@ div[data-title][pos*='-20px']:hover:after {
 
 
 .item {
-  font-family: 'Bradley Hand', cursive;
+    font-family: 'Bradley Hand', cursive;
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 input:placeholder-shown {
