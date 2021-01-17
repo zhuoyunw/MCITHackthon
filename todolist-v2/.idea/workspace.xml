@@ -105,7 +105,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>196</line>
+          <line>192</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
