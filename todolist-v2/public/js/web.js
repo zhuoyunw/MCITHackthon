@@ -13,15 +13,15 @@ if (isInteger(window.location.href.slice(-3))) {
     var nowSelYear = window.location.href.slice(-8, -4);
     var nowSelMonth = window.location.href.slice(-4, -2);
     var nowSelDay = parseInt(window.location.href.slice(-2));
-    var shift = parseInt(nowSelMonth) - 1;
 }
 else {
     var datetemp = formatDate(new Date());
     var nowSelYear = datetemp.substring(0, 4);
     var nowSelMonth = datetemp.substring(5, 7);
     var nowSelDay = parseInt(datetemp.substring(8, 10));
-    var shift = 0;
 }
+
+var shift = parseInt(nowSelMonth) - 1;
 
 var months = [];
 for (let i = 1; i <= 7; i++) {
